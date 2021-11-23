@@ -6,7 +6,7 @@
 #    By: okinnune <okinnune@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/29 15:36:10 by okinnune          #+#    #+#              #
-#    Updated: 2021/11/23 07:31:36 by okinnune         ###   ########.fr        #
+#    Updated: 2021/11/23 15:12:18 by okinnune         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,4 +30,6 @@ clean:
 
 tclean:
 	rm -f $(TEST)
+	rm -f testputs
 	rm -f *_fd
+	rm -f results/*

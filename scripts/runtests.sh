@@ -5,8 +5,9 @@ echo "DIFFS PHASE COMPLETE"
 echo "DIFFS_DETAILED PHASE COMPLETE"
 ./testprog | grep "running\|leaked" --line-buffered | tee results/LEAKS
 echo "LEAKS PHASE COMPLETE"
+
 #PUTS
-./testprog putstr_test noleaks | ./testputs putstr | grep -a "passed" | tee results/PUTS
+./testprog putstr_test noleaks | grep -v "SEED" | ./testputs putstr | grep -a "passed" | tee results/PUTS
 
 ./testprog putchar_test noleaks | ./testputs putchar | grep -a "passed" | tee -a results/PUTS
 

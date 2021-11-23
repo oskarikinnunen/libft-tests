@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	
 	int seed = time(0);
 	srand(seed);
-	printf("SEED = %i\n", seed);
+	
 	//return (0);
 	if (argc >= 2)
 	{
@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("running whole suite of tests!\n");
+		printf("SEED = %i\n", seed);
 		for (int i = 0; i < FCOUNT; i++)
 		{
 			printf("running test nbr %i, name %s\n", i, func_names[i]);
