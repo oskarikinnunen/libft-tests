@@ -1,0 +1,3 @@
+bash addtestprotos.sh
+bash addtsources.sh
+bash FunctionPointerArrayInitializer.sh
